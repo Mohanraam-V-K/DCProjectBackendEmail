@@ -18,8 +18,18 @@ public class ScheduleEmailReq {
 
     @NotEmpty
     private String body;
+    
+    private CustomerBill data;
 
-    @NotNull
+    public CustomerBill getData() {
+		return data;
+	}
+
+	public void setData(CustomerBill data) {
+		this.data = data;
+	}
+
+	@NotNull
     private LocalDateTime dateTime;
 
     @NotNull
