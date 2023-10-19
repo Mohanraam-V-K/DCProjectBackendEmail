@@ -10,12 +10,21 @@ public class CustomerBill {
     private String planDuration;
     private String planDueDate;
     private String customerId;
+    private String customerphone;
 
-    public CustomerBill() {
+    public String getCustomerphone() {
+		return customerphone;
+	}
+
+	public void setCustomerphone(String customerphone) {
+		this.customerphone = customerphone;
+	}
+
+	public CustomerBill() {
     }
 
     public CustomerBill(UUID billId, String plan_type, Double planAmount, String planName, String planDuration,
-            String planDueDate, String customerId) {
+            String planDueDate, String customerId,String customerphone) {
         this.billId = billId;
         this.plan_type = plan_type;
         this.planAmount = planAmount;
@@ -23,6 +32,7 @@ public class CustomerBill {
         this.planDuration = planDuration;
         this.planDueDate = planDueDate;
         this.customerId = customerId;
+        this.customerphone = customerphone;
     }
 
     public UUID getBillId() {

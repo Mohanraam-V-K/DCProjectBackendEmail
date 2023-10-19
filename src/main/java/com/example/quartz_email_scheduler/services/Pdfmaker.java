@@ -29,7 +29,8 @@ public class Pdfmaker {
                 "planAmount", bill.getPlanAmount(),
                 "planDuration", bill.getPlanDuration(),
                 "planDueDate", bill.getPlanDueDate(),
-                "customerId", bill.getCustomerId()
+                "customerId", bill.getCustomerId(),
+                "customerphone",bill.getCustomerphone()
             ); 
 
             // Create a new document
